@@ -5,7 +5,7 @@
 
   **A desktop workspace for market context, portfolio review, and research.**
 
-  [Product tour](#product-tour) · [Capabilities](#capabilities) · [Run locally](#run-locally) · [Architecture](docs/ARCHITECTURE.md) · [Data sources](docs/DATA-SOURCES-AND-LIMITS.md) · [Security](SECURITY.md)
+  [Product tour](#product-tour) · [Capabilities](#capabilities) · [Principles guide](https://github.com/RawPowered/RawMarkets-Principles) · [Run locally](#run-locally) · [Architecture](docs/ARCHITECTURE.md) · [Data sources](docs/DATA-SOURCES-AND-LIMITS.md) · [Security](SECURITY.md)
 
   <br />
 
@@ -59,6 +59,7 @@ The captures below were recorded **May 22 to 25, 2026**. Their prices, timestamp
 | **Research tools** | Portfolio research jobs, market context, personal journal entries, and structured notes for later review. |
 | **AI signal copilot** | Ollama-based local chat and scoring when configured, with optional Gemini analysis and web-search services. Each provider has a different data boundary. |
 | **Local data controls** | SQLite persistence, configurable feeds, API-key management, data export and import, and dashboard layout controls. |
+| **Principle frameworks** | Investor's Bible, Gambler's Bible, and Bible of Wealth reading paths, self-reported diagnostics, and optional Wealth Bible context for Local Copilot. See the [RawMarkets Principles guide](https://github.com/RawPowered/RawMarkets-Principles) for a code-linked walkthrough. |
 
 ## Run locally
 
