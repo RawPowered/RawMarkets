@@ -1,0 +1,1 @@
+# Python 3.10+ stdlib only — no pip dependencies required for research_cli.py

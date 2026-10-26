@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RawMarkets Launcher</title>
+  <link rel="stylesheet" href="launcher.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <main class="panel">
+    <button type="button" class="win-close" id="btn-close" title="Exit RawMarkets">×</button>
+    <div class="logo-block">
+      <div class="logo">R_I</div>
+      <h1>RawMarkets</h1>
+      <p class="tagline">Investor Terminal</p>
+    </div>
+
+    <div class="status-row">
+      <span class="led" id="led-server"></span>
+      <span id="status-text">Engine offline</span>
+    </div>
+
+    <ul class="phase-list" id="phase-list" hidden>
+      <li data-phase="hydrate">Cache stats</li>
+      <li data-phase="news">RSS news</li>
+      <li data-phase="market">Market capture</li>
+      <li data-phase="portfolio">Sync portfolio from market</li>
+    </ul>
+    <p class="hydrate-summary" id="hydrate-summary" hidden></p>
+
+    <div class="actions">
+      <button type="button" class="btn btn-play" id="btn-play">▶ Play</button>
+      <button type="button" class="btn btn-secondary" id="btn-settings">⚙ Settings</button>
+      <button type="button" class="btn btn-ghost" id="btn-quit">Quit</button>
+    </div>
+
+    <p class="hint" id="hint">Launch the local API and open the terminal in your desktop window.</p>
+    <p class="version" id="version"></p>
+  </main>
+  <script src="launcher-renderer.js"></script>
+</body>
+</html>

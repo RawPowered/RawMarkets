@@ -1,0 +1,41 @@
+# Microsoft Store AppX/MSIX (Partner Center upload). Identity via -c.appx.* from rawgraded build-msix-store-all.cjs
+appId: com.rawinvestor.rawmarkets
+productName: RawMarkets
+compression: store
+directories:
+  output: release/msix-store
+  buildResources: build-resources
+files:
+  - dist/**/*
+  - electron/**/*
+  - python/**/*
+  - "!python/.venv/**"
+  - migrations/**/*
+  - scripts/ensure-runtime.mjs
+  - package.json
+  - node_modules/better-sqlite3/**/*
+  - node_modules/bindings/**/*
+  - node_modules/file-uri-to-path/**/*
+  - node_modules/playwright/**/*
+  - node_modules/playwright-core/**/*
+asarUnpack:
+  - "**/dist/**"
+  - "**/node_modules/better-sqlite3/**"
+  - "**/node_modules/bindings/**"
+  - "**/node_modules/file-uri-to-path/**"
+  - "**/node_modules/playwright/**"
+  - "**/node_modules/playwright-core/**"
+  - "**/python/**"
+  - "**/migrations/**"
+win:
+  target:
+    - appx
+  artifactName: RawMarkets-Store-${version}-${arch}.${ext}
+  forceCodeSigning: false
+  signAndEditExecutable: false
+appx:
+  displayName: RawMarkets
+  languages:
+    - en-US
+  showNameOnTiles: false
+  setBuildNumber: true

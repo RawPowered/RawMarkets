@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" fill="none">
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F4CB72"/>
+      <stop offset="1" stop-color="#D98A25"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#70F5B2"/>
+      <stop offset="1" stop-color="#40A9FF"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#26313A" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#090C10"/>
+      <stop offset="1" stop-color="#090C10" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="390" rx="28" fill="#090C10"/>
+  <path d="M0 0H1200V390H0Z" fill="url(#grid)" opacity=".56"/>
+  <path d="M660 390 1030 0h170v390H660Z" fill="#10171C" opacity=".82"/>
+  <path d="M747 390 1117 0" stroke="#F4B942" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M815 390 1185 0" stroke="#48D99B" stroke-opacity=".28" stroke-width="2"/>
+  <path d="M0 0h820L450 390H0Z" fill="url(#fade)"/>
+  <rect x="58" y="48" width="42" height="42" rx="12" fill="#161D23" stroke="#36414A"/>
+  <path d="m68 75 10-20 7 12 6-9 8 17H68Z" fill="url(#metal)"/>
+  <path d="M66 81h31" stroke="#70F5B2" stroke-width="2"/>
+  <text x="116" y="76" fill="#D9E1E5" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2.6">RAWPOWERED  /  MARKETS</text>
+  <text x="58" y="176" fill="#F4F6F7" font-family="Arial, sans-serif" font-size="62" font-weight="800" letter-spacing="-2">RawMarkets</text>
+  <text x="62" y="220" fill="#AEB8BF" font-family="Arial, sans-serif" font-size="20" letter-spacing=".3">A personal market terminal for research and portfolio review.</text>
+  <path d="M62 255H503" stroke="#2A343C"/>
+  <text x="62" y="291" fill="#70F5B2" font-family="Consolas, monospace" font-size="12" font-weight="700" letter-spacing="2">METALS</text>
+  <text x="158" y="291" fill="#F4CB72" font-family="Consolas, monospace" font-size="12" font-weight="700" letter-spacing="2">ENERGY</text>
+  <text x="271" y="291" fill="#7DBBFF" font-family="Consolas, monospace" font-size="12" font-weight="700" letter-spacing="2">EQUITIES</text>
+  <text x="403" y="291" fill="#CAD3D8" font-family="Consolas, monospace" font-size="12" font-weight="700" letter-spacing="2">RESEARCH</text>
+  <path d="M61 322H99" stroke="url(#signal)" stroke-width="3"/>
+  <text x="111" y="327" fill="#87939B" font-family="Consolas, monospace" font-size="12" letter-spacing="1.2">WINDOWS DESKTOP  ·  LOCAL SQLITE  ·  OPTIONAL AI</text>
+  <g opacity=".95">
+    <path d="M772 288h25v-37h25v37h25v-63h25v63h25v-94h25v94h25v-45h25v45h25v-78h25v78h25v-120h25v120h25" stroke="url(#signal)" stroke-width="3"/>
+    <path d="M771 303h333" stroke="#35424A"/>
+    <path d="M790 332h29M843 332h54M919 332h32M973 332h84" stroke="#303A42" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="1042" cy="75" r="5" fill="#70F5B2"/>
+    <text x="1058" y="80" fill="#C7D0D5" font-family="Consolas, monospace" font-size="11" letter-spacing="1">SOURCE-AWARE</text>
+  </g>
+</svg>

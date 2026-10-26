@@ -1,0 +1,2 @@
+-- portfolio_holdings.archived_at: NULL = active, set = archived (closed out)
+-- Column applied idempotently in db.ts runPortfolioHoldingArchiveMigration

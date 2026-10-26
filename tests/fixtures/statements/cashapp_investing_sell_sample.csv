@@ -1,0 +1,3 @@
+Date,Transaction ID,Transaction Type,Currency,Amount,Fee,Net Amount,Asset Type,Asset Price,Asset Amount,Status,Notes,Name of sender/receiver,Account
+2025-06-03 10:00:00 CDT,,Stock Sell,USD,$10.00,$0.00,$10.00,DEMO,$100.00,0.1,COMPLETE,Synthetic sample transaction,,Test Balance
+2025-06-02 12:00:00 CDT,,Stock Buy,USD,($2.50),$0.00,($2.50),DEMO,$25.00,0.1,COMPLETE,Synthetic sample transaction,,Test Balance

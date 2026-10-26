@@ -1,0 +1,4 @@
+Date,Transaction ID,Type,Status,Note,From,To,Amount
+2025-05-01,demo_1,Cash App Investing,COMPLETE,Buy BTC,,Sample Investing,-5.00
+2025-05-02,demo_2,Card Payment,COMPLETE,Sample purchase,Sample Sender,Sample Merchant,-7.50
+2025-05-03,demo_3,Cash App Investing,COMPLETE,Buy ACME,,Sample Investing,-3.00

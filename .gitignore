@@ -1,0 +1,41 @@
+# Secrets and local configuration
+.env*
+!.env.example
+EnVars/
+*.pem
+*.key
+
+# Local databases, imports, backups, and journal attachments
+data/**
+!data/.gitkeep
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+build-resources/portable-memory/data/rawmarkets.db
+
+# Generated builds and packaging artifacts
+node_modules/
+dist/
+build/
+release/
+deploy/ftp/
+coverage/
+test-results/
+playwright-report/
+python/.venv/
+python/__pycache__/
+__pycache__/
+*.py[cod]
+*.exe
+*.msi
+*.msix
+
+# Local editor and runtime output
+.cursor/
+.DS_Store
+Thumbs.db
+*.log
+_probe_gf.png

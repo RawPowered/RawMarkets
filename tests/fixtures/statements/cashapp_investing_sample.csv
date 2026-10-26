@@ -1,0 +1,5 @@
+Date,Transaction ID,Transaction Type,Currency,Amount,Fee,Net Amount,Asset Type,Asset Price,Asset Amount,Status,Notes,Name of sender/receiver,Account
+2025-06-02 12:00:00 CDT,,Stock Buy,USD,($2.50),$0.00,($2.50),DEMO,$25.00,0.1,COMPLETE,Synthetic sample transaction,,Test Balance
+2025-06-01 14:00:00 CDT,,Stock Buy,USD,($3.00),$0.00,($3.00),ACME,$30.00,0.1,COMPLETE,Synthetic sample transaction,,Test Balance
+2025-05-28 09:00:00 CDT,,Bitcoin Buy,USD,($1.00),$0.00,($1.00),BTC,$100000.00,0.00001,COMPLETE,Synthetic sample transaction,,Test Balance
+2025-05-20 08:00:00 CDT,,Stock Buy,USD,($4.00),$0.00,($4.00),TST.B,$40.00,0.1,COMPLETE,Synthetic sample transaction,,Test Balance

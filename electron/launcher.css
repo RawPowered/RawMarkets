@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #0a0c10;
+  color: #e8eaed;
+  height: 100vh;
+  overflow: hidden;
+  user-select: none;
+}
+
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 122, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 122, 255, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+}
+
+.panel {
+  position: relative;
+  z-index: 1;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 48px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.win-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #9aa0a6;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.win-close:hover {
+  background: rgba(255, 59, 48, 0.15);
+  color: #ff6b6b;
+  border-color: rgba(255, 59, 48, 0.35);
+}
+
+.logo-block {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.logo {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 16px;
+  background: linear-gradient(135deg, #1d1d1f, #424245);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 22px;
+  color: #fff;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  font-size: 11px;
+  color: #86868b;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 4px;
+  font-family: ui-monospace, monospace;
+}
+
+.status-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  font-size: 12px;
+  font-family: ui-monospace, monospace;
+  color: #86868b;
+}
+
+.led {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff3b30;
+  box-shadow: 0 0 8px #ff3b30;
+}
+
+.led.ready {
+  background: #34c759;
+  box-shadow: 0 0 8px #34c759;
+}
+
+.led.starting,
+.led.warming {
+  background: #ff9500;
+  box-shadow: 0 0 8px #ff9500;
+  animation: pulse 1s infinite;
+}
+
+.phase-list {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 16px;
+  font-size: 11px;
+  font-family: ui-monospace, monospace;
+  color: #636366;
+}
+
+.phase-list li {
+  padding: 4px 0 4px 18px;
+  position: relative;
+}
+
+.phase-list li::before {
+  content: "○";
+  position: absolute;
+  left: 0;
+  color: #48484a;
+}
+
+.phase-list li.active {
+  color: #e8eaed;
+}
+
+.phase-list li.active::before {
+  content: "●";
+  color: #007aff;
+}
+
+.phase-list li.done {
+  color: #86868b;
+}
+
+.phase-list li.done::before {
+  content: "✓";
+  color: #34c759;
+}
+
+.hydrate-summary {
+  font-size: 10px;
+  color: #636366;
+  font-family: ui-monospace, monospace;
+  text-align: center;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  max-width: 300px;
+}
+
+@keyframes pulse {
+  50% { opacity: 0.5; }
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.btn {
+  border: none;
+  border-radius: 14px;
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s, opacity 0.15s;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-play {
+  background: linear-gradient(180deg, #007aff, #0056b3);
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+.btn-secondary {
+  background: #1c1c1e;
+  color: #e8eaed;
+  border: 1px solid #3a3a3c;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #86868b;
+}
+
+.hint {
+  margin-top: 24px;
+  font-size: 11px;
+  color: #636366;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 280px;
+}
+
+.version {
+  margin-top: auto;
+  padding-top: 24px;
+  font-size: 10px;
+  color: #48484a;
+  font-family: ui-monospace, monospace;
+}
